@@ -13,8 +13,11 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/teachers', [TeacherController::class, 'index']);
 
+Route::get('/teachers/{id}', [TeacherController::class, 'show']);
+
 Route::get('/students', [StudentController::class, 'index']);
 
+Route::get('/students/{id}', [StudentController::class, 'show']);
 
 
 // Route::get('/departments', [DepartmentController::class, 'index']);
